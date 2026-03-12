@@ -1,0 +1,187 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* MENU */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111827;
+  color: #fff;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3b82f6;
+}
+
+#toggleTheme {
+  margin-left: 20px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* HEADER */
+.inicio {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #fff;
+  padding: 0 20px;
+}
+
+.inicio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.inicio p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* SEÇÕES */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+/* Diferenciar cada seção */
+#sobre { background: #fefefe; }
+#habilidades { background: #e5e7eb; }
+#formacao { background: #f9fafb; }
+#portfolio { background: #ffffff; }
+#contato { background: #e5e7eb; }
+
+/* PROJETOS */
+.projeto {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.projeto h3 {
+  margin-bottom: 15px;
+  color: #3b82f6;
+}
+
+/* FORMULÁRIO */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background: #111827;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #374151;
+}
+
+/* Mensagens de confirmação */
+#msgConfirmacao {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#msgConfirmacao.sucesso {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+#msgConfirmacao.erro {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.hidden {
+  display: none;
+}
+
+/* FOOTER - CORRIGIDO AQUI */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: #fff;
+}

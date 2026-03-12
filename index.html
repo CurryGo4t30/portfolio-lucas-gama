@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Lucas da Silva da Gama</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU DE NAVEGAÇÃO -->
+  <nav class="navbar">
+    <h1 class="logo">Lucas Gama</h1>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <button id="toggleTheme">🌙</button>
+  </nav>
+
+  <!-- APRESENTAÇÃO -->
+  <header class="inicio">
+    <h2>Lucas da Silva da Gama</h2>
+    <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+    <span>Uninter • Peruíbe/SP</span>
+  </header>
+
+  <main>
+    <!-- SOBRE -->
+    <section id="sobre" class="container">
+      <h2>Sobre Mim</h2>
+      <p>Meu nome é Lucas da Silva da Gama, tenho 22 anos e resido em Peruíbe/SP. Atualmente sou estudante do curso de Análise e Desenvolvimento de Sistemas pela Uninter.</p>
+      <p>Tenho grande interesse na área de tecnologia, especialmente no desenvolvimento de software e aplicações web.</p>
+      <p>Entre meus hobbies estão estudar tecnologia, aprender novas ferramentas de programação e acompanhar tendências da área.</p>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="container">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML5, CSS3 e JavaScript</li>
+        <li>Versionamento com Git/GitHub</li>
+        <li>Design responsivo</li>
+        <li>Lógica de programação</li>
+      </ul>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="container">
+      <h2>Formação</h2>
+      <ul>
+        <li><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</li>
+        <li><strong>Instituição:</strong> Uninter</li>
+        <li><strong>Status:</strong> Ensino Superior em andamento</li>
+        <li><strong>Idiomas:</strong> Português (nativo)</li>
+      </ul>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="container">
+      <h2>Portfólio</h2>
+      <article class="projeto">
+        <h3>Projeto Cidadão Consciente</h3>
+        <p>Aplicativo para registrar denúncias sobre problemas urbanos, como buracos nas ruas e iluminação pública defeituosa.</p>
+        <p><strong>Tecnologias utilizadas:</strong> HTML5, CSS3, JavaScript</p>
+        <a href="https://github.com/CurryGo4t30/cidadao-consciente" target="_blank" rel="noopener noreferrer" class="linkProjeto">Ver projeto</a>
+      </article>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="container">
+      <h2>Contato</h2>
+      <form id="formContato">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!-- Mensagem de confirmação -->
+      <div id="msgConfirmacao" class="hidden"></div>
+
+      <p class="email">Email: <a href="mailto:luckkasgama69@gmail.com">luckkasgama69@gmail.com</a></p>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2026 - Lucas da Silva da Gama</p>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button id="btnTopo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
